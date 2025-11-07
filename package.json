@@ -1,0 +1,25 @@
+{
+  "name": "penyewaan_kamera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "make:sequelizerc": "node -e \"require('fs').writeFileSync('.sequelizerc', `const path = require('path'); module.exports = { 'config': path.resolve('config', 'config.json'), 'models-path': path.resolve('models'), 'seeders-path': path.resolve('seeders'), 'migrations-path': path.resolve('migrations') };`); console.log('✅ .sequelizerc dibuat!')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "md5": "^2.3.0",
+    "mysql2": "^3.15.3",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.3"
+  }
+}
